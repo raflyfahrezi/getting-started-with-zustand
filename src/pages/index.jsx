@@ -1,11 +1,9 @@
 import React from 'react'
 
+import { Home } from '../modules'
+
 const index = () => {
-    return (
-        <div className='py-20 text-center'>
-            <h1 className='text-4xl'>hello world from tailwind</h1>
-        </div>
-    )
+    return <Home />
 }
 
 export default index
