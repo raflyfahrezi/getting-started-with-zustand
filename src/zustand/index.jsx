@@ -2,7 +2,8 @@ import create from 'zustand'
 
 const increment = (set) => set((state) => ({ count: state.count + 1 }))
 
-const decrement = (set) => set((state) => ({ count: state.count - 1 }))
+const decrement = (set) =>
+    set((state) => ({ count: state.count === 0 ? 0 : state.count - 1 }))
 
 const useStore = create((set) => ({
     count: 0,
