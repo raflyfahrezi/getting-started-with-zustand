@@ -1,7 +1,9 @@
 import React from 'react'
 
+import { More } from '../modules'
+
 const more = () => {
-    return <div></div>
+    return <More />
 }
 
 export default more
